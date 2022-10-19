@@ -1,0 +1,264 @@
+/*ESTILOS GENERALES*/
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  margin: 0px; }
+
+nav {
+  z-index: 1;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  background-color: black; }
+  nav a {
+    color: #cfcfcf !important; }
+    nav a img {
+      margin: 5px 20px 5px 5px; }
+  nav .navbar-brand {
+    font-size: 28pt; }
+  nav .navbar-toggler {
+    background-color: #cfcfcf !important; }
+
+footer {
+  background-color: black;
+  color: #cfcfcf; }
+
+/*INDEX*/
+main {
+  margin-top: 97px; }
+
+.main {
+  background: url("../img/mainpic.png");
+  color: #cfcfcf;
+  background-size: cover;
+  background-position: center; }
+  .main .maintext h2 {
+    color: #cfcfcf;
+    text-align: center; }
+  .main .maintext p {
+    text-align: center; }
+
+.call2 {
+  background-image: url("../img/jumbopic.png");
+  background-position: center;
+  background-size: cover;
+  color: #cfcfcf; }
+  .call2 h1 {
+    font-weight: 900 !important; }
+  .call2 .call2btn {
+    background-color: #6b7aad !important; }
+
+.jumbotron {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+/*FAQ*/
+.faq h1 {
+  padding: 25px;
+  text-align: center; }
+
+/*ABOUT*/
+.about {
+  padding: 35px; }
+  .about .integrante {
+    background-color: #cfcfcf; }
+    .about .integrante .card-title {
+      background-color: #6b7aad; }
+    .about .integrante .card-text {
+      text-align: justify; }
+
+/*CONTACTO*/
+.main-contacto {
+  padding: 50px; }
+  .main-contacto h1 {
+    margin-bottom: 25px; }
+  .main-contacto .formulario {
+    margin-bottom: 25px; }
+    .main-contacto .formulario .selecEventos-item {
+      margin-left: 10px;
+      padding: 25px; }
+  .main-contacto .form-control {
+    border-color: black; }
+  .main-contacto .btn {
+    border-color: black; }
+  .main-contacto .form-check-input {
+    border-color: black; }
+
+/*Estilo Mobile*/
+@media (max-width: 480px) {
+  /*INDEX*/
+  .main h2 {
+    padding-top: 25px;
+    text-align: center; }
+  .main p {
+    padding: 25px;
+    text-align: center; }
+  .eventos {
+    text-align: center; }
+    .eventos .ev {
+      text-align: center; }
+      .eventos .ev p {
+        text-align: justify;
+        padding: 10px; }
+  /*FAQ*/
+  .faq {
+    margin-bottom: 120px; }
+    .faq img {
+      display: none; }
+  /*PORTAFOLIO*/
+  .portafolio {
+    padding: 25px; }
+    .portafolio .img {
+      margin-bottom: 15px; }
+      .portafolio .img .vert {
+        margin-left: 10%; }
+  /*ABOUT*/
+  .about .integrante {
+    margin-bottom: 20px;
+    padding: 10px; } }
+
+/*ESTILO TABLETS*/
+@media (min-width: 480px) and (max-width: 900px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+  /*INDEX*/
+  .main h2 {
+    padding-top: 25px !important;
+    text-align: center; }
+  .main p {
+    color: white;
+    padding: 25px !important;
+    text-align: center; }
+  .eventos {
+    height: 40%;
+    text-align: center; }
+    .eventos .ev {
+      text-align: center; }
+      .eventos .ev p {
+        text-align: justify;
+        padding: 10px; }
+  .call2 {
+    margin-top: 20px;
+    height: 600px; }
+  /*FAQ*/
+  .faq img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+  /*PORTAFOLIO*/
+  .main-port {
+    overflow-x: hidden;
+    margin-bottom: 15%; }
+    .main-port .port .portafolio {
+      padding: 25px; }
+      .main-port .port .portafolio .img {
+        margin-left: 160px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+        max-width: 100%; }
+      .main-port .port .portafolio .imgvert {
+        margin-left: 225px !important; }
+  /*ABOUT*/
+  .about {
+    margin-bottom: 100px; }
+    .about .integrante {
+      margin-bottom: 20px;
+      padding: 10px;
+      margin-left: 50px; } }
+
+/*Estilo Desktop*/
+@media (min-width: 992px) {
+  /*NAV*/
+  .navbar-nav {
+    margin-left: auto; }
+  /*FOOTER*/
+  footer .social {
+    padding-left: 300px;
+    padding-top: 50px; }
+  footer .footer-text {
+    padding-left: 10px;
+    padding-top: 10px; }
+  /*INDEX*/
+  /*MAIN*/
+  .main {
+    height: 525px; }
+    .main .maintext {
+      padding-top: 150px; }
+      .main .maintext h2 {
+        font-size: 50pt; }
+      .main .maintext p {
+        font-size: 30pt; }
+  /*SECCION EVENTOS*/
+  .ev {
+    background-color: #cfcfcf;
+    height: 600px;
+    justify-content: center; }
+    .ev h1 {
+      padding: 25px; }
+    .ev p {
+      background-color: #6b7aad;
+      padding: 10px; }
+    .ev .eventos {
+      margin-top: 10px;
+      display: inline-block; }
+      .ev .eventos img {
+        border: 3px solid #6b7aad;
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        width: 250px;
+        height: 250px; }
+        .ev .eventos img:hover {
+          transform: scale(0.75, 0.75); }
+      .ev .eventos .et {
+        display: inline;
+        text-align: center; }
+  /*JUMBOTRON CALL2ACTION*/
+  .call2 {
+    height: 600px;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    padding: 150px; }
+    .call2 h1 {
+      font-weight: 900 !important;
+      font-size: 70pt; }
+    .call2:hover {
+      opacity: 1; }
+  .jumbotron {
+    margin-top: 0;
+    padding-bottom: 500px; }
+    .jumbotron .container {
+      text-align: center; }
+  /*INICIO DE LA PAGINA PORTAFOLIO*/
+  .main-port {
+    margin-bottom: 97px; }
+  .portafolio {
+    padding: 15px; }
+    .portafolio .img {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .portafolio .img .vert {
+        margin-left: 70px; }
+  /*ABOUT*/
+  .about {
+    margin-bottom: 97px; }
+    .about h1 {
+      margin-bottom: 25px;
+      text-align: center; }
+    .about .integrante {
+      margin: 50px !important; }
+      .about .integrante img {
+        padding: 50px 50px 0px 50px; }
+    .about .card-title {
+      text-align: center; }
+    .about .card-text {
+      padding-bottom: 25px; }
+  /*CONTACTO*/
+  .btn-reset {
+    margin-left: 25px; } }
