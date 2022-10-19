@@ -32,6 +32,13 @@ nav{
 footer{
     background-color: black;
     color: $gray;
+    .sticky-f{
+        background-color: black !important;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 /*INDEX*/
@@ -40,7 +47,6 @@ main{
 }
 
 .main{
-    
     background: url("../img/mainpic.png");
     color: $gray;
     background-size: cover;
@@ -391,4 +397,3 @@ main{
     }
 
 }
-

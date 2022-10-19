@@ -22,6 +22,12 @@ nav {
 footer {
   background-color: black;
   color: #cfcfcf; }
+  footer .sticky-f {
+    background-color: black !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
 
 /*INDEX*/
 main {
