@@ -8652,7 +8652,7 @@ main {
     padding: 25px; }
     .portafolio .img {
       margin-bottom: 15px; }
-      .portafolio .img .vert {
+      .portafolio .img .vertical {
         margin-left: 10%; } }
 
 /*Estilo Tablet*/
@@ -8667,7 +8667,7 @@ main {
         margin-bottom: 15px;
         margin-right: 0px;
         max-width: 100%; }
-      .main-port .port .portafolio .imgvert {
+      .main-port .port .portafolio .vertical {
         margin-left: 225px !important; } }
 
 /*Estilo Desktop*/
