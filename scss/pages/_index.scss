@@ -1,0 +1,247 @@
+
+/*ESTILOS GENERALES*/
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    z-index: 1;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    background-color: black;
+    a{
+        color: $gray !important;
+        img{
+            margin: 5px 20px 5px 5px;
+        }
+    }
+    .navbar-brand{
+        font-size: 28pt;
+    }
+    .navbar-toggler{
+        background-color: $gray !important;
+    }
+}   
+
+footer{
+    background-color: black;
+    color: $gray;
+    .sticky-footer{
+        background-color: black !important;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    p{
+        margin: 0px;
+    }
+}
+
+
+main{
+    margin-top: 97px;
+    .main{
+        background: url("../img/mainpic.png");
+        color: $gray;
+        background-size: cover;
+        background-position: center;
+        &text{
+            h2{
+                color: $gray;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .call2{
+        background-image: url("../img/jumbopic.png");
+        background-position: center;
+        background-size: cover;
+        color: $gray;
+        h1{
+            font-weight: 900 !important;
+        }
+        &__btn{
+            background-color: $babyblue !important;
+        }
+    }
+
+    .jumbotron{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/*Estilo Mobile*/
+@media (max-width: 480px){
+    nav{
+        .navbar-brand{
+            font-size: 25pt;
+        } 
+    }
+
+    .main{
+        h2{
+            padding-top: 25px;
+            text-align: center; 
+        }
+        p{
+            padding: 25px;
+            text-align: center;
+        }
+    }
+
+    .eventos{
+        text-align: center;
+        .ev{
+            text-align: center;
+            p{
+                text-align: justify;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+/*Estilo Tablet*/
+@media (min-width:480px) and (max-width: 900px)  {
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    /*INDEX*/
+    .main{
+        h2{
+            padding-top: 25px !important;
+            text-align: center;
+        }
+        p{
+            color: white;
+            padding: 25px !important;
+            text-align: center;
+        }
+        .eventos{
+            height: 40%;
+            text-align: center;
+        .ev{
+            text-align: center;
+                p{
+                    text-align: justify;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .call2{
+            margin-top: 20px;
+            height: 600px;
+        }
+    }
+}
+
+/*Estilo Desktop*/
+@media (min-width: 992px){
+    /*NAV*/
+    .navbar-nav{
+        margin-left: auto; 
+    }
+
+    /*FOOTER*/
+
+    footer{
+        .footer_social{
+            padding-left: 300px;
+            padding-top: 50px;
+        } 
+        .footer_text{
+        padding-left: 10px;
+        padding-top: 10px;
+        } 
+    }
+
+    /*INDEX*/
+    /*MAIN*/
+    .main{
+        height: 525px;
+        .maintext{
+            padding-top: 150px;
+            h2{
+                font-size: 50pt;
+            }
+            p{
+                font-size: 30pt;
+            }
+        }
+    }
+    
+
+    /*SECCION EVENTOS*/
+    .ev{
+        background-color: $gray;
+        height: 700px;
+        justify-content: center;
+        h1{
+            padding: 25px;
+        }  
+        p{
+            background-color: $babyblue;
+            padding: 15px;
+            margin: 0px;
+        } 
+        .eventos{
+            margin-top: 10px;
+            display: inline-block;
+            img{
+                border: 3px solid #6b7aad;
+                margin-left: 120px;
+                margin-right: 120px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                width:250px; 
+                height:250px;
+
+                &:hover{
+                    transform: scale(0.95, 0.95);
+                    transition:.5s;
+                }
+            }
+            .et{
+            display: inline;
+            text-align: center;
+            }
+        }    
+    }
+
+    /*JUMBOTRON CALL2ACTION*/
+
+    .jumbotron{
+        margin-top: 0;
+        height: 600px;
+        opacity: 0.90;
+        background-position: center;
+        background-size: cover;
+        
+        .container{
+            text-align: center;
+        }
+        
+        h2{
+            margin-top: 100px;
+            font-weight: 900 !important;
+            font-size: 70pt;
+        }
+
+        &:hover{
+            opacity: 1; 
+        }
+    }
+}

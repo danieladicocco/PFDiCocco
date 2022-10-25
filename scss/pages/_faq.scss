@@ -1,0 +1,42 @@
+.faq{
+    h1{
+        padding: 25px;  
+        text-align: center;
+    }
+}
+
+/*Estilo Mobile*/
+@media (max-width: 480px){
+    .faq{
+        img{
+        display: none;
+        }
+        margin-bottom: 120px;
+    }
+}
+
+/*Estilo Tablet*/
+
+@media (min-width:480px) and (max-width: 900px)  {
+    .faq{
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*Estilo Desktop*/
+@media (min-width: 992px){
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .faq{
+        .fade-in{
+            animation: fadeIn 3s;
+        }
+    }
+}

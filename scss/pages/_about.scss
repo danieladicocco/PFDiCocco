@@ -1,0 +1,50 @@
+.about{
+    padding: 35px;
+    .integrante{
+        border-color: black !important;
+        background-color: black;
+        .card-title{
+            background-color: $gray;
+        }
+        .card-text{
+            text-align: justify;
+            color: white;
+        }
+    }
+
+}
+
+/*ESTILO TABLET*/
+@media (min-width:480px) and (max-width: 900px)  {
+    .about{
+        .integrante{
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-left: 50px;
+        }
+    margin-bottom: 100px;
+    }
+}
+
+/*Estilo Desktop*/
+@media (min-width: 992px){
+    .about{
+        margin-bottom: 97px;
+        h1{
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .integrante{
+            margin: 50px !important;
+            img{
+                padding: 50px 50px 0px 50px;
+            }
+            .card-title{
+                text-align: center;
+            }
+            .card-text{
+                padding-bottom: 25px;
+            }
+        }
+    }
+}

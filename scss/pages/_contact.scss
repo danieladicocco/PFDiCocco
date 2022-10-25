@@ -1,0 +1,39 @@
+.main-contacto{
+    padding: 50px;
+    h1{
+        margin-bottom: 25px;
+    }
+    .formulario{
+        margin-bottom: 25px;
+            .selecEventos-item{
+                margin-left: 10px;
+                padding: 25px;
+            }
+        }
+    .form-control{
+        border-color: black;
+    }
+    .btn{
+        border-color: black;
+    }
+    .form-check-input{
+        border-color: black;
+    }
+} 
+
+/*Estilo Mobile*/
+@media (max-width: 480px){
+    .about{
+        .integrante{
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+    }
+}
+
+/*Estilo Desktop*/
+@media (min-width: 992px){
+    .btn-reset{
+        margin-left: 25px;
+    } 
+}
